@@ -7,3 +7,8 @@
 build/
 node_modules/
 .publication-*
+
+# Draft-thread WIP scratch (underscore-prefixed). Pre-gate, unreviewed —
+# must NEVER reach the public repo until it clears the maintainer-side
+# confidentiality gate and is moved to essays/ | technical/ | papers/.
+drafts/_*
