@@ -12,3 +12,12 @@ node_modules/
 # must NEVER reach the public repo until it clears the maintainer-side
 # confidentiality gate and is moved to essays/ | technical/ | papers/.
 drafts/_*
+
+# RESOLVED 2026-05-20: manifesto/ と anchor/ は別 private リポジトリ
+# (ecri0/sens-manifesto, private) へ移行済み (Task #9 完了)。
+# 以下のパターンは「事故防止のための防御的残置」 ―― 万一このリポジトリ
+# 内で manifesto/ や anchor/ ディレクトリが再作成されても、誤って公開
+# されないようにする。SDD 3 環境のうち本リポジトリは public 専用、
+# 非公開素材は ~/sens-manifesto (private) を参照。
+manifesto/
+anchor/
