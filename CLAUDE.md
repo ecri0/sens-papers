@@ -80,6 +80,7 @@ sens-papers/
 ├── LICENSE-MIT             # scripts/ のコード
 ├── CLAUDE.md               # 本文書
 ├── docs/OPERATING.md       # 公開運用規律
+├── docs/glossary.md        # 公開用語予約 (Stories と定義同期/ステータス独立、2026-05-29 〜)
 ├── handover/               # Antifragile ハンドオーバー等
 ├── drafts/                 # WIP（unreviewed、not for citation）
 │   ├── _essay-reconciliation.md
