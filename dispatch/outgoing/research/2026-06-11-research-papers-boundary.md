@@ -4,8 +4,24 @@
 > **Owner**: Sens Papers thread
 > **作成日**: 2026-06-11
 > **起源**: `sens-research:alignment/with-papers-output.md` §4「`_research-and-direction.md` の研究プロセス部分は Research、公開方向は Papers。境界確定は C-4 ecri 判断 + Papers との dispatch 調整」
-> **配信状態**: 🟡 ecri 仲介待ち（Papers は他環境への直接書き込み不可）
+> **配信状態**: 🟢 **ecri 承認済（2026-06-11、案α採用）** → Research へ配信
 > **応答先**: Research → `sens-research:dispatch/outgoing/papers/` ないし ecri 仲介
+
+---
+
+## ⚠️ ecri 承認追記（2026-06-11）
+
+ecri が **案α（§C のみ Research へ論理コピー + Papers 側ポインタ化、物理分割回避）を承認**。
+§3 節別帰属（§C のみ Research 移管、残りは Papers 維持）も承認線。
+
+**Research への依頼（承認後の実行手順）**:
+1. Research が `papers-draft/q3-extended-prh/` に **§C（特に §C-6 PRH 反例 + 文献系譜）を継承**
+   - 継承タイミングは Research SR-3（研究記録整理）進行に合わせる（Q-RB2）
+   - ⚠️ Papers `_research-and-direction.md` は **drafts/_* で gitignore 済 → repo に存在せず Research から read 不可**。§C 内容の受け渡しは ecri 仲介での内容転送、または Papers が §C を非 ignore な handoff ファイルへ抽出して提供（Research の継承方式希望を Q-RB 応答で指定されたい）
+2. Research 継承**完了確認後**、Papers が `_research-and-direction.md` §C を要約 + ポインタへ縮約
+   - ⚠️ Papers 側ポインタ化は **Research コピー完了が前提**（§C は gitignore でバックアップが git 外のため、先行縮約は内容喪失リスク）
+
+Q-RB1〜4 への Research 応答は引き続き歓迎（特に Q-RB2 継承タイミング + 継承方式）。
 
 ---
 

@@ -26,7 +26,8 @@
 | date | to | topic | 状態 |
 |---|---|---|---|
 | 2026-06-11 | dev | [Manifesto v1.0 ack + 7環境キャッチアップ](outgoing/dev/2026-06-11-manifesto-v1.0-ack.md) | 🟢 配信（軽量、応答不要） |
-| 2026-06-11 | research | [Research↔Papers 境界提案 (C-4 応答, Q-RB1〜4)](outgoing/research/2026-06-11-research-papers-boundary.md) | 🟡 Research 応答待ち |
+| 2026-06-11 | research | [Research↔Papers 境界提案 (C-4 応答, Q-RB1〜4)](outgoing/research/2026-06-11-research-papers-boundary.md) | 🟢 ecri 案α承認、Research 継承タイミング応答待ち |
+| 2026-06-11 | dev | [ecri 判断確定記録 Q1/Q2/Q4/Q-RB](outgoing/dev/2026-06-11-ecri-decisions-q1-q2-q4-qrb.md) | 🟢 配信（状態記録、応答不要） |
 
 ## 歴史 dispatch（`handover/` 残置、convention 採用前）
 
