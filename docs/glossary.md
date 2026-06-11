@@ -147,8 +147,37 @@ essays/ / papers/ / technical/ の公開判断時、その時点の Public Multi
 
 ---
 
-## 6. Update history
+## 6. Manifesto v1.0 引用整合（2026-06-11、T2）
+
+公開素材で本 glossary の用語を essays/ / papers/ / technical/ に展開する際の
+引用正典は **Manifesto v1.0**（2026-06-10、`sens-manifesto:manifesto/manifesto-v1.0.md`）。
+
+### 6.1 多モダリティ非依存 Feature の Manifesto 正典基盤
+
+- §2「モダリティ非依存 Feature」の Manifesto レベル基盤は **v1.0 L89**:
+  「Firth はこう書いた ―― 『単語はその仲間によって知られる』。我々はこれを
+  拡張する。**意味は、それを取り巻くあらゆる感覚と表象の総体によって構成される**。」
+- → Firth 1957 の分布意味論を「あらゆる感覚と表象」= 多モダリティへ拡張する一文が、
+  本 glossary §2 の多モダリティ用語群の正典的根拠。公開発信時はこの v1.0 L89 を
+  参照点とする。
+
+### 6.2 PRH 関連用語の引用スタンス
+
+- 「共有埋め込み空間」（research-watch、PRH 反例連動）の公開言及は、Manifesto v1.0
+  L71「PRH には反論もあるが構わない。意味素は変化し続け、輪郭を更新し続ける」の
+  **条件付きスタンス**と整合させる（無条件の普遍収束を主張しない）。
+- PRH 反例研究の起草自体は **Research 環境**（第7環境、2026-06-05 移管）。Papers は
+  完成原稿受領後の公開発信時に引用整合のみ担当。
+
+### 6.3 引用書式
+
+- 公開原稿の引用書式は v1.0 [^1] 形式（原文 + 訳 + 出典 + 年代）に統一。
+
+---
+
+## 7. Update history
 
 | date | change | reference |
 |---|---|---|
-| 2026-05-29 | Initial glossary created. 9 reserved + 1 active (Sens Text) + 1 research-watch (共有埋め込み空間) + 1 Papers 固有 reserved (Public Multimodal Scope) | sens-papers commit (本 commit), 起源 dispatch MM-P1 |
+| 2026-05-29 | Initial glossary created. 9 reserved + 1 active (Sens Text) + 1 research-watch (共有埋め込み空間) + 1 Papers 固有 reserved (Public Multimodal Scope) | sens-papers commit, 起源 dispatch MM-P1 |
+| 2026-06-11 | §6 Manifesto v1.0 引用整合 追加（T2）。多モダリティ非依存 Feature の正典基盤 = v1.0 L89、PRH スタンス整合、引用書式統一 | Manifesto v1.0 release notification (2026-06-10) |
