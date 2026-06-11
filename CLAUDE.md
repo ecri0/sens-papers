@@ -2,17 +2,25 @@
 
 ## 1. Project Identity
 - Repo: ecri0/sens-papers (Private)
-- Role: Sens プロジェクト 5 環境のうち **Sens Papers 環境** —— public-facing
-  essays / papers / technical writing の起草・推敲・公開
+- Role: Sens プロジェクト **7 環境**のうち **Sens Papers 環境** —— public-facing
+  essays / papers / technical writing の起草・推敲・**公開発信**
 - 戦略層: Antifragile 戦略の 5 層構造のうち、全層の **公開発信を担う横断環境**
   （いずれの戦略層にも直接属さない）
 - Canonical working directory: `/Users/ecri/.claude-worktrees/sens/sens-papers/`
   （Mission Control mirror 対象、sibling 統一 2026-05-28）
-- Sibling environments:
-  - `/Users/ecri/.claude-worktrees/sens/sens-manifesto/` — Manifesto (戦略 5)
-  - `/Users/ecri/.claude-worktrees/sens/sens-stories/` — Application Story
-  - `/Users/ecri/.claude-worktrees/sens/sens/` — Dev (戦略 1・2・3、統括)
-  - `/Users/ecri/.claude-worktrees/sens/sens-foundation/` — License / SCA (戦略 4)
+- Sibling environments（**7 環境体制、2026-06-05 完成**）:
+  - `/Users/ecri/.claude-worktrees/sens/sens-manifesto/` — Manifesto (哲学/Constitution)
+  - `/Users/ecri/.claude-worktrees/sens/sens-stories/` — Stories (物語/例)
+  - `/Users/ecri/.claude-worktrees/sens/sens/` — Dev (技術実装/統括/ADR 採択)
+  - `/Users/ecri/.claude-worktrees/sens/sens-foundation/` — Foundation (License/SCA/SSF)
+  - `/Users/ecri/.claude-worktrees/sens/sens-design/` — Design (視覚/UI-UX/ブランド、第6環境 2026-06-04)
+  - `/Users/ecri/.claude-worktrees/sens/sens-research/` — Research (研究プロセス/USID 探索/実証検証、第7環境 2026-06-05)
+- **Research との役割分化（2026-06-05、重要）**:
+  - Research = 研究プロセス（実験設計 / corpus 選定 / 結果分析 / 思想史的考察 / 草稿素材）
+  - Papers = **完成論文の公開発信**（公開原稿完成 / peer review 提出 / arXiv）
+  - PRH 反例研究（旧 Q3-extended A-2 体制）の研究起草は **Research へ移管**、Papers は受領後の公開発信
+  - 受け渡し: Research `papers-draft/<topic>/` → ecri 仲介 → Papers
+  - 境界定義: `sens-research:alignment/with-papers-output.md`
 
 ## 2. Session Start Sanity Check（2026-05-28 規約、R5 dispatch）
 
@@ -64,16 +72,17 @@ Sens プロジェクト固有の禁止対象:
 → **Dev `CLAUDE.md` confidentiality boundary と完全整合**。違反した内容を
 public に出すことは絶対禁止。迷ったら ecri に確認。
 
-## 4. 参照ルール（5 環境拡張版）
+## 4. 参照ルール（7 環境版）
 
 | アクション | Papers の権限 |
 |---|---|
 | 自環境を読む | ✓ |
 | 自環境に書く | ✓ |
-| 他環境を読む | **✓ 全環境**（公開素材抽出のため） |
-| 他環境に書く | **✗** |
+| 他環境を読む | **✓ 全 6 環境**（Manifesto/Stories/Dev/Foundation/Design/Research、公開素材抽出のため） |
+| 他環境に書く | **✗**（dispatch は `dispatch/outgoing/<env>/` 起草 → ecri 仲介） |
 
 Papers は公開発信のため全環境を読めるが、書き込みは自環境内のみ。
+他環境への要求・応答は `dispatch/outgoing/<env>/` に起草し ecri 仲介で配信。
 
 ## 5. このリポが持つもの
 
@@ -85,7 +94,10 @@ sens-papers/
 ├── CLAUDE.md               # 本文書
 ├── docs/OPERATING.md       # 公開運用規律
 ├── docs/glossary.md        # 公開用語予約 (Stories と定義同期/ステータス独立、2026-05-29 〜)
-├── handover/               # Antifragile ハンドオーバー等
+├── handover/               # Antifragile ハンドオーバー + 過去 outgoing dispatch
+├── dispatch/               # 環境間 dispatch（2026-06 convention）
+│   ├── incoming/<env>/     # 他環境からの受信（ecri 仲介で配置）
+│   └── outgoing/<env>/     # 他環境への送信（ecri 仲介で配信）
 ├── drafts/                 # WIP（unreviewed、not for citation）
 │   ├── _essay-reconciliation.md
 │   ├── _manifesto-core.md
@@ -104,7 +116,8 @@ drafts/ ファイル名先頭 `_` は「非公開作業物」の印。`.gitignor
 ## 6. Lifecycle
 
 ```
-他環境（Manifesto / Stories / Dev / Foundation）からの WIP 受領
+他環境（Manifesto / Stories / Dev / Foundation / Research）からの WIP / 研究素材受領
+  ※ Research → Papers の研究素材は papers-draft/<topic>/ 経由（完成原稿化が Papers の責務）
     ↓
 drafts/_<topic>.md として保存（unreviewed marker、_ prefix で gitignore）
     ↓
@@ -114,7 +127,7 @@ ecri レビュー
     ↓
 essays/ / papers/ / technical/ へ promote（publish）
     ↓
-site/ に反映、必要なら arXiv 投稿
+site/ に反映、必要なら arXiv 投稿（peer review 提出は Papers 主担当）
     ↓
 （withdraw 必要時）revert commit + index 更新（EW-001 経緯参照）
 ```
@@ -164,6 +177,9 @@ ls /Users/ecri/.claude-worktrees/sens/sens/docs/governance/decisions/ 2>/dev/nul
 | Application Story / Interview の起草 | Sens Stories |
 | 技術仕様の起草 | Dev |
 | License / SCA の起草 | Foundation |
+| 視覚 / UI-UX / ブランド | Design |
+| 研究プロセス（実験設計 / corpus / 結果分析 / 思想史的考察 / 研究草稿素材） | **Research** |
 | 内部情報の公開判断（最終承認） | ecri |
 
-Papers は **公開可能な抜粋・引用・推敲・publishable deep-dive の起草** までを担う。
+Papers は **公開可能な抜粋・引用・推敲・publishable deep-dive の起草、および
+Research から受領した研究素材の完成原稿化・公開発信（peer review / arXiv）** を担う。
