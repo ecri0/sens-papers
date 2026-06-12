@@ -22,6 +22,7 @@
 | 2026-06-10 | dev | [Manifesto v1.0 リリース通知](incoming/dev/2026-06-10-manifesto-v1.0-release-notification.md) | ✅ processed（ack 済 → outgoing/dev/2026-06-11） |
 | 2026-06-12 | dev | [リリースゲート v0.5/v1.0](incoming/dev/2026-06-12-release-gate-papers.md) | ✅ processed（ack 済 → outgoing/dev/2026-06-12-release-gate-ack） |
 | 2026-06-12 | dev | [daily-setup/wrapup skill 設置通知](incoming/dev/2026-06-12-env-skill-setup-notice.md) | ✅ processed（ack 済 → outgoing/dev/2026-06-12-env-skill-setup-ack） |
+| 2026-06-12 | dev | [研究コミュニティ戦略 (系統 B/C)](incoming/dev/2026-06-12-research-community-strategy.md) | ✅ ack 済（取り込み判断は次セッション）→ outgoing/dev/2026-06-12-research-community-strategy-ack |
 
 ## Outgoing（送信）
 
@@ -30,6 +31,10 @@
 | 2026-06-11 | dev | [Manifesto v1.0 ack + 7環境キャッチアップ](outgoing/dev/2026-06-11-manifesto-v1.0-ack.md) | 🟢 配信（軽量、応答不要） |
 | 2026-06-11 | research | [Research↔Papers 境界提案 (C-4 応答, Q-RB1〜4)](outgoing/research/2026-06-11-research-papers-boundary.md) | 🟢 ecri 案α承認、Research 継承タイミング応答待ち |
 | 2026-06-11 | dev | [ecri 判断確定記録 Q1/Q2/Q4/Q-RB](outgoing/dev/2026-06-11-ecri-decisions-q1-q2-q4-qrb.md) | 🟢 配信（状態記録、応答不要） |
+| 2026-06-12 | dev | [リリースゲート ack](outgoing/dev/2026-06-12-release-gate-ack.md) | 🟢 配信（軽量） |
+| 2026-06-12 | dev | [skill 設置 ack](outgoing/dev/2026-06-12-env-skill-setup-ack.md) | 🟢 配信（軽量） |
+| 2026-06-12 | dev | [v0.5 preprint 主題確定 + 素材要求 MR-1〜4](outgoing/dev/2026-06-12-v05-preprint-topic-and-material-request.md) | 🟡 Dev 素材供給待ち |
+| 2026-06-12 | dev | [研究コミュニティ戦略 ack](outgoing/dev/2026-06-12-research-community-strategy-ack.md) | 🟢 配信（軽量、次セッション評価予告） |
 
 ## 歴史 dispatch（`handover/` 残置、convention 採用前）
 
