@@ -20,6 +20,8 @@
 | date | from | topic | 状態 |
 |---|---|---|---|
 | 2026-06-10 | dev | [Manifesto v1.0 リリース通知](incoming/dev/2026-06-10-manifesto-v1.0-release-notification.md) | ✅ processed（ack 済 → outgoing/dev/2026-06-11） |
+| 2026-06-12 | dev | [リリースゲート v0.5/v1.0](incoming/dev/2026-06-12-release-gate-papers.md) | ✅ processed（ack 済 → outgoing/dev/2026-06-12-release-gate-ack） |
+| 2026-06-12 | dev | [daily-setup/wrapup skill 設置通知](incoming/dev/2026-06-12-env-skill-setup-notice.md) | ✅ processed（ack 済 → outgoing/dev/2026-06-12-env-skill-setup-ack） |
 
 ## Outgoing（送信）
 
