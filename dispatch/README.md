@@ -23,6 +23,11 @@
 | 2026-06-12 | dev | [リリースゲート v0.5/v1.0](incoming/dev/2026-06-12-release-gate-papers.md) | ✅ processed（ack 済 → outgoing/dev/2026-06-12-release-gate-ack） |
 | 2026-06-12 | dev | [daily-setup/wrapup skill 設置通知](incoming/dev/2026-06-12-env-skill-setup-notice.md) | ✅ processed（ack 済 → outgoing/dev/2026-06-12-env-skill-setup-ack） |
 | 2026-06-12 | dev | [研究コミュニティ戦略 (系統 B/C)](incoming/dev/2026-06-12-research-community-strategy.md) | ✅ ack 済（取り込み判断は次セッション）→ outgoing/dev/2026-06-12-research-community-strategy-ack |
+| 2026-06-13 | dev | [研究者マップ移管承認](incoming/dev/2026-06-13-researcher-map-transfer-approved.md) | ✅ ack（acks-bundle、Foundation 弁護士確認前提） |
+| 2026-06-13 | dev | [補完関係 framing 確定](incoming/dev/2026-06-13-meaning-emergence-complementary-framing.md) | ✅ ack（acks-bundle、CLAUDE.md §3.1 反映） |
+| 2026-06-13 | dev | [基準4 機密境界](incoming/dev/2026-06-13-confidentiality-framing-for-criterion4.md) | ✅ ack（acks-bundle、CLAUDE.md §3.1 反映） |
+| 2026-06-13 | dev | [意味組成自己組織化研究ハンドオーバー](incoming/dev/2026-06-13-meaning-emergence-handover.md) | ✅ ack（roadmap DRAFT 起草、ecri 確認5件待ち） |
+| 2026-06-12 | research | [境界応答 Q-RB1〜4 全面同意（案α）](../../sens-research/dispatch/outgoing/papers/2026-06-12-research-papers-boundary-response.md) | ✅ 受領 → §C handoff 提供（outgoing/research/2026-06-13） |
 
 ## Outgoing（送信）
 
@@ -35,6 +40,9 @@
 | 2026-06-12 | dev | [skill 設置 ack](outgoing/dev/2026-06-12-env-skill-setup-ack.md) | 🟢 配信（軽量） |
 | 2026-06-12 | dev | [v0.5 preprint 主題確定 + 素材要求 MR-1〜4](outgoing/dev/2026-06-12-v05-preprint-topic-and-material-request.md) | 🟡 Dev 素材供給待ち |
 | 2026-06-12 | dev | [研究コミュニティ戦略 ack](outgoing/dev/2026-06-12-research-community-strategy-ack.md) | 🟢 配信（軽量、次セッション評価予告） |
+| 2026-06-13 | research | [§C handoff（PRH 反例 + 文献系譜）](outgoing/research/2026-06-13-section-C-handoff.md) | 🟡 Research 継承完了通知待ち → 後に §C ポインタ化 |
+| 2026-06-13 | dev | [軽量 ack 3件（researcher-map / 補完 framing / 基準4）](outgoing/dev/2026-06-13-acks-bundle.md) | 🟢 配信（軽量） |
+| 2026-06-13 | dev | [意味組成ハンドオーバー ack](outgoing/dev/2026-06-13-meaning-emergence-handover-ack.md) | 🟢 配信（roadmap DRAFT、ecri 確認5件待ち） |
 
 ## 歴史 dispatch（`handover/` 残置、convention 採用前）
 
